@@ -1,0 +1,40 @@
+[% PROCESS _header.tt
+        js           => []
+        css          => [],
+        extra_header => '',
+%]
+
+<table>
+    <thead>
+        <td>Host</td>
+        <td>Service</td>
+        <td>Entity</td>
+        <td>Threshold warning</td>
+        <td>Threshold critical</td>
+        <td>Generate</td>
+    </thead>
+    <tbody>
+        [% FOR host_name IN hosts.keys().sort() %]
+            [% SET host = hosts.$host_name %]
+            [% FOR service_id IN host.services.keys().sort() %]
+                [% SET service = host.services.$service_id %]
+                <form method="POST" action="check_cmkagent_add.cgi?host_name=[% host.name %]&service_id=[% service.id %]">
+                    <tr>
+                        <td>[% host.name %]</td>
+                        <td>
+                            [% service.section %]
+                            [% IF service.specialization %]
+                                ([% service.specialization %])
+                            [% END %]
+                        </td>
+                        <td>[% service.entity %]</td>
+                        <td><input type="text" name="warn"></td>
+                        <td><input type="text" name="crit"></td>
+                        <td><input type="submit" value="Generate"></td>
+                        <td>[%# service.content.join('<br>') %]</td>
+                    </tr>
+                </form>
+            [% END %]
+        [% END %]
+    </tbody>
+</table>

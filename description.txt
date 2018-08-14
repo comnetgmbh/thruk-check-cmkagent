@@ -1,0 +1,3 @@
+Allows configuring check_cmkagent based services.
+
+Url: check_cmkagent.cgi
