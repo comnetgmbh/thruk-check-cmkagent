@@ -144,6 +144,11 @@ define service {
 EOF
 );
 
+    # Reload core
+    for (@{$c->{db}->{backends}}) {
+        Thruk::Utils::External::cmd($c, { cmd => $_->{'config'}->{'configtool'}->{'obj_reload_cmd'}." 2>&1", 'background' => 1 });
+    }
+
     $c->stash->{template} = 'check_cmkagent.tt';
 }
 
