@@ -24,7 +24,7 @@ sub add_routes {
     return;
 }
 
-my $AGENT_DIR = "/tmp/agent";
+my $AGENT_DIR = "/var/lib/check_cmkagent";
 
 sub collect_hosts {
     my %hosts;
