@@ -7,6 +7,10 @@ use IO::File;
 use IO::Dir;
 use IO::Socket::INET;
 
+my $AGENT_DIR = '/var/lib/check_cmkagent';
+my $NAGIOS_DIR = 'etc/naemon/conf.d/';
+my $VALID_HOST_REGEX = qr/^[a-zA-Z0-9._-]+$/;
+
 sub add_routes {
     my($self, $app, $routes) = @_;
 
@@ -116,7 +120,6 @@ sub index {
     $c->stash->{template} = 'check_cmkagent.tt';
 }
 
-my $NAGIOS_DIR = '/opt/omd/sites/foobar/etc/naemon/conf.d/';
 sub add {
     my $c = shift;
 
