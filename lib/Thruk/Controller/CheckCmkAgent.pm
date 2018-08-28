@@ -24,15 +24,20 @@ sub add_routes {
     return;
 }
 
-my $AGENT_DIR = "/var/lib/check_cmkagent";
-
 sub collect_hosts {
+    my @hosts = @_;
     my %hosts;
 
-    my $dh = IO::Dir->new($AGENT_DIR);
-    return unless defined $dh;
+    unless (@hosts)  {
+        my $dh = IO::Dir->new($AGENT_DIR);
+        return unless defined $dh;
 
-    while (my $entry = $dh->read) {
+        while (my $entry = $dh->read) {
+            push(@hosts, $entry);
+        }
+    }
+
+    for my $entry (@hosts) {
         my $path = "$AGENT_DIR/$entry";
         next unless -f $path;
 
@@ -103,7 +108,12 @@ sub collect_host_services {
 sub index {
     my $c = shift;
 
-    $c->stash->{hosts} = { collect_hosts };
+    my $host = $c->req->parameters->{host};
+    $host = undef unless $host =~ /$VALID_HOST_REGEX/;
+
+    my @filter;
+    push(@filter, $host) if defined $host;
+    $c->stash->{hosts} = { collect_hosts(@filter) };
     $c->stash->{template} = 'check_cmkagent.tt';
 }
 
