@@ -43,25 +43,38 @@
     </tr>
         [% FOR host_name IN hosts.keys().sort() %]
             [% SET host = hosts.$host_name %]
+            [% SET first_service = 1 %]
+            [% SET even = 'statusEven' %]
             [% FOR service_id IN host.services.keys().sort() %]
                 [% SET service = host.services.$service_id %]
-                <form method="POST" action="check_cmkagent_add.cgi?host_name=[% host.name %]&service_id=[% service.id %]">
-                    <tr>
-                        <td>[% host.name %]</td>
-                        <td>
+                <form method="POST" action="check_cmkagent_add.cgi?host=[% host.name %]&service=[% service.id %]">
+                    <tr class="[% even %]">
+                        <td class="[% even %]">
+                            [% IF first_service %]
+                                [% host.name %]
+                            [% END %]
+                        </td>
+                        <td class="[% even %]">
                             [% service.section %]
                             [% IF service.specialization %]
                                 ([% service.specialization %])
                             [% END %]
                         </td>
-                        <td>[% service.entity %]</td>
-                        <td><input type="text" name="warn"></td>
-                        <td><input type="text" name="crit"></td>
-                        <td><input type="submit" value="Generate"></td>
-                        <td>[%# service.content.join('<br>') %]</td>
+                        <td class="[% even %]">[% service.entity %]</td>
+                        <td class="[% even %]"><input type="text" name="warn" value="60"></td>
+                        <td class="[% even %]"><input type="text" name="crit" value="80"></td>
+                        <td class="[% even %]">
+                            <input type="submit" value="Generate">
+                        </td>
                     </tr>
                 </form>
+                [% SET first_service = 0 %]
+                [% IF even == 'statusEven' %]
+                    [% SET even = 'statusOdd' %]
+                [% ELSE %]
+                    [% SET even = 'statusEven' %]
+                [% END %]
             [% END %]
         [% END %]
-    </tbody>
+    
 </table>
