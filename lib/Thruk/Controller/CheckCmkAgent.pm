@@ -148,7 +148,7 @@ define service {
 	use                     generic-service
 	host_name               $host
 	service_description     $service{section}: $service{entity}
-	check_command           check_cmkagent_passive!\$HOSTNAME\$!$service{section}!$warn!$crit
+	check_command           check_cmkagent_passive!$service{section}!$service{entity}!$warn!$crit
 }
 EOF
 );
