@@ -123,35 +123,32 @@ sub index {
 sub add {
     my $c = shift;
 
-    my $host_name = $c->req->parameters->{host_name};
-    my $service_id = $c->req->parameters->{service_id};
-    my %services = collect_host_services("$AGENT_DIR/$host_name");
-    my %service = %{$services{$service_id}};
+    # Fetch arguments
+    my $host = $c->req->parameters->{host};
+    my $service = $c->req->parameters->{service};
+    my $warn = $c->req->parameters->{warn};
+    my $crit = $c->req->parameters->{crit};
 
-    # Write host config
-    my $host_cfg = "$NAGIOS_DIR/host_$host_name.cfg";
-    my $host_fh = IO::File->new($host_cfg, 'w');
-    die("Can't open $host_cfg: $!\n") unless defined $host_fh;
-    print($host_fh <<EOF
-define host {
-	use             generic-host
-	host_name       $host_name
-	alias           Some Remote Host
-	address         $host_name
-}
-EOF
-);
+    # Validate arguments
+    return unless $host =~ /$VALID_HOST_REGEX/;
+    return unless $service =~ /^[a-zA-Z0-9_]+$/;
+    return unless $warn =~ /^\d+$/;
+    return unless $crit =~ /^\d+$/;
+
+    # Fetch host
+    my %hosts = collect_hosts($host);
+    my %service = %{%hosts->{$host}->{services}->{$service}};
 
     # Write service config
-    my $service_cfg = "$NAGIOS_DIR/host_${host_name}_$service_id.cfg";
+    my $service_cfg = "$NAGIOS_DIR/cmkagent_${host}_$service.cfg";
     my $service_fh = IO::File->new($service_cfg, 'w');
     die("Can't open $service_cfg: $!\n") unless defined $service_fh;
     print($service_fh <<EOF
 define service {
 	use                     generic-service
-	host_name               $host_name
+	host_name               $host
 	service_description     $service{section}: $service{entity}
-	check_command           check_cmkagent
+	check_command           check_cmkagent_passive!\$HOSTNAME\$!$service{section}!$warn!$crit
 }
 EOF
 );
