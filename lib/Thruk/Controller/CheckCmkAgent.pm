@@ -158,7 +158,11 @@ EOF
         Thruk::Utils::External::cmd($c, { cmd => $_->{'config'}->{'configtool'}->{'obj_reload_cmd'}." 2>&1", 'background' => 1 });
     }
 
-    $c->stash->{template} = 'check_cmkagent.tt';
+    # Notify user about added service
+    $c->stash->{added} = { host => $host, service => \%service };
+
+    # Render index
+    return Thruk::Controller::CheckCmkAgent::index($c);
 }
 
 1;
