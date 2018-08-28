@@ -4,16 +4,21 @@
         extra_header => '',
 %]
 
-<table>
-    <thead>
-        <td>Host</td>
-        <td>Service</td>
-        <td>Entity</td>
-        <td>Threshold warning</td>
-        <td>Threshold critical</td>
-        <td>Generate</td>
-    </thead>
-    <tbody>
+<style>
+    tr td {
+        text-align: left;
+    }
+</style>
+
+<table class='status [% paneprefix %]_table' style="width: 100%">
+    <tr>
+        <th class="status col">Host</th>
+        <th class="status col">Service</th>
+        <th class="status col">Entity</th>
+        <th class="status col">Threshold warning (%)</th>
+        <th class="status col">Threshold critical (%)</th>
+        <th class="status col">Generate</th>
+    </tr>
         [% FOR host_name IN hosts.keys().sort() %]
             [% SET host = hosts.$host_name %]
             [% FOR service_id IN host.services.keys().sort() %]
