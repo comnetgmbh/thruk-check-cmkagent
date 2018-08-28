@@ -70,7 +70,6 @@ sub parse_cmkagent {
     return @sections;
 }
 
-#push(@{$section->{mountpoints}}, [split(/\s/, $line)]->[-1])
 sub collect_host_services {
     my $path = shift;
     my %services;
