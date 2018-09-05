@@ -184,5 +184,58 @@ EOF
     return Thruk::Controller::CheckCmkAgent::index($c);
 }
 
-1;
+=pod
 
+=head1 NAME
+
+thruk-check_cmkagent
+
+Allows configuring check_cmkagent based services.
+
+=head1 DESCRIPTION
+
+thruk-check-cmkagent allows you to easily generate Nagios-compatible
+configuration files from check_cmkagent_active Check_MK agent dumps.
+
+=head1 INSTALLATION
+
+Just copy the files in this directory to your Thruk I<plugins-available>
+directory and enable thruk-check-cmkagent.
+
+=head1 USAGE
+
+=head2 GENERAL
+
+You can get an overview of every discovered host in check_cmkagent.cgi. Please
+note that you'll need to run check_cmkagent_active[1] for every host you want to
+manage here.
+To make things easier, you can use the cmkagent-host host template. This will
+add an check_cmkagent action icon to your host, allowing you to quickly skip to
+your host in check_cmkagent.
+
+=head2 GENERATING RULES
+
+=over
+
+=item Open check_cmkagent.cgi
+
+=item Select the host and service you wish to monitor
+
+=item Modify the warning and critical thresholds to suit your needs
+
+Note: In general, these are percentages given in the range from 0 to 100.
+      This is NOT always the case; please refer to check_cmkagent_local's
+      documentation for details on this.
+
+=item Click generate. Your monitoring core will be reloaded automatically to apply
+   your new configuration.
+
+=back
+
+=head1 COPYIGHT AND LICENSING
+
+Copyright 2018 Rika Lena Denia, comNET GmbH <rika.denia@comnetgmbh.com>
+
+=cut
+
+1;

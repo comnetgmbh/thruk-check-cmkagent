@@ -1,41 +1,46 @@
-################################################################
-#                     SIGMA Informatique
-################################################################
+NAME
 
+    thruk-check_cmkagent
 
-OBJECT :   thruk-check-cmkagent
+    Allows configuring check_cmkagent based services.
 
-DESC   :    Allows configuring check_cmkagent based services.
+DESCRIPTION
 
-#######################################################################
-Copyright 2018 Rika Lena Denia, comNET GmbH <rika.denia@comnetgmbh.com>
-#######################################################################
+    thruk-check-cmkagent allows you to easily generate Nagios-compatible
+    configuration files from check_cmkagent_active Check_MK agent dumps.
 
-Detailed Description:
+INSTALLATION
 
-thruk-check-cmkagent allows you to easily generate Nagios-compatible
-configuration files from check_cmkagent_active Check_MK agent dumps.
+    Just copy the files in this directory to your Thruk plugins-available
+    directory and enable thruk-check-cmkagent.
 
-General usage:
+USAGE
 
-You can get an overview of every discovered host in check_cmkagent.cgi. Please
-note that you'll need to run check_cmkagent_active[1] for every host you want to
-manage here.
-To make things easier, you can use the cmkagent-host host template. This will
-add an check_cmkagent action icon to your host, allowing you to quickly skip to
-your host in check_cmkagent.
+ GENERAL
 
-Generating rules:
+    You can get an overview of every discovered host in check_cmkagent.cgi.
+    Please note that you'll need to run check_cmkagent_active[1] for every
+    host you want to manage here. To make things easier, you can use the
+    cmkagent-host host template. This will add an check_cmkagent action
+    icon to your host, allowing you to quickly skip to your host in
+    check_cmkagent.
 
-1. Open check_cmkagent.cgi
-2. Select the host and service you wish to monitor
-3. Modify the warning and critical thresholds to suit your needs
-   Note: In general, these are percentages given in the range from 0 to 100.
-         This is NOT always the case; please refer to check_cmkagent_local's
-         documentation for details on this.
-4. Click generate. Your monitoring core will be reloaded automatically to apply
-   your new configuration.
+ GENERATING RULES
 
+    Open check_cmkagent.cgi
 
-References:
-[1] https://github.com/comnetgmbh/check_cmkagent_local
+    Select the host and service you wish to monitor
+
+    Modify the warning and critical thresholds to suit your needs
+
+      Note: In general, these are percentages given in the range from 0 to
+      100. This is NOT always the case; please refer to
+      check_cmkagent_local's documentation for details on this.
+
+    Click generate. Your monitoring core will be reloaded automatically to
+    apply your new configuration.
+
+COPYIGHT AND LICENSING
+
+    Copyright 2018 Rika Lena Denia, comNET GmbH <rika.denia@comnetgmbh.com>
+
