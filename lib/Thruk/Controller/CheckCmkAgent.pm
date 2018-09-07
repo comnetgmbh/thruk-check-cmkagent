@@ -190,7 +190,7 @@ EOF
 
 thruk-check_cmkagent
 
-Allows configuring check_cmkagent based services.
+The 'Check_CMKAgent' plugin allows automatically configuring Check_MK agent-based services.
 
 =head1 DESCRIPTION
 
