@@ -1,0 +1,25 @@
+<<<winperf_if>>>
+1538650861.21 510 2742190
+2 instances: Intel[R]_PRO_1000_MT_Desktop_Adapter Intel[R]_PRO_1000_MT_Desktop_Adapter__2
+-122 41301797 91045 bulk_count
+-110 47586 142 bulk_count
+-244 36824 17 bulk_count
+-58 10762 125 bulk_count
+10 1000000000 1000000000 large_rawcount
+-246 40217523 1140 bulk_count
+14 36824 16 bulk_count
+16 0 1 bulk_count
+18 0 0 large_rawcount
+20 0 0 large_rawcount
+22 0 0 large_rawcount
+-4 1084274 89905 bulk_count
+26 10659 30 bulk_count
+28 103 95 bulk_count
+30 0 0 large_rawcount
+32 0 0 large_rawcount
+34 0 0 large_rawcount
+1086 0 0 large_rawcount
+1088 0 0 large_rawcount
+1090 0 0 bulk_count
+1092 0 0 bulk_count
+1094 0 0 large_rawcount

@@ -1,0 +1,5 @@
+<<<dotnet_clrmemory:sep(44)>>>
+AllocatedBytesPersec,Caption,Description,FinalizationSurvivors,Frequency_Object,Frequency_PerfTime,Frequency_Sys100NS,Gen0heapsize,Gen0PromotedBytesPerSec,Gen1heapsize,Gen1PromotedBytesPerSec,Gen2heapsize,LargeObjectHeapsize,Name,NumberBytesinallHeaps,NumberGCHandles,NumberGen0Collections,NumberGen1Collections,NumberGen2Collections,NumberInducedGC,NumberofPinnedObjects,NumberofSinkBlocksinuse,NumberTotalcommittedBytes,NumberTotalreservedBytes,PercentTimeinGC,PercentTimeinGC_Base,ProcessID,PromotedFinalizationMemoryfromGen0,PromotedMemoryfromGen0,PromotedMemoryfromGen1,Timestamp_Object,Timestamp_PerfTime,Timestamp_Sys100NS
+0,,,0,0,2742190,10000000,0,0,0,0,0,0,_Global_,0,112,0,0,0,0,0,33,0,0,0,4294967295,0,0,0,0,0,1098486834,131831316612740000
+0,,,0,0,2742190,10000000,0,0,0,0,0,0,SelfServicePlugin,0,82,0,0,0,0,0,27,0,0,0,0,0,0,0,0,0,1098486834,131831316612740000
+0,,,0,0,2742190,10000000,0,0,0,0,0,0,concentr,0,30,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,1098486834,131831316612740000

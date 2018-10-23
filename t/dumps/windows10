@@ -1,0 +1,477 @@
+<<<dotnet_clrmemory:sep(44)>>>
+AllocatedBytesPersec,Caption,Description,FinalizationSurvivors,Frequency_Object,Frequency_PerfTime,Frequency_Sys100NS,Gen0heapsize,Gen0PromotedBytesPerSec,Gen1heapsize,Gen1PromotedBytesPerSec,Gen2heapsize,LargeObjectHeapsize,Name,NumberBytesinallHeaps,NumberGCHandles,NumberGen0Collections,NumberGen1Collections,NumberGen2Collections,NumberInducedGC,NumberofPinnedObjects,NumberofSinkBlocksinuse,NumberTotalcommittedBytes,NumberTotalreservedBytes,PercentTimeinGC,PercentTimeinGC_Base,ProcessID,PromotedFinalizationMemoryfromGen0,PromotedMemoryfromGen0,PromotedMemoryfromGen1,Timestamp_Object,Timestamp_PerfTime,Timestamp_Sys100NS
+0,,,0,0,2742190,10000000,0,0,0,0,0,0,_Global_,0,112,0,0,0,0,0,33,0,0,0,4294967295,0,0,0,0,0,1060044532,131831316472590000
+0,,,0,0,2742190,10000000,0,0,0,0,0,0,SelfServicePlugin,0,82,0,0,0,0,0,27,0,0,0,0,0,0,0,0,0,1060044532,131831316472590000
+0,,,0,0,2742190,10000000,0,0,0,0,0,0,concentr,0,30,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,1060044532,131831316472590000
+<<<wmi_cpuload:sep(44)>>>
+[system_perf]
+AlignmentFixupsPersec,Caption,ContextSwitchesPersec,Description,ExceptionDispatchesPersec,FileControlBytesPersec,FileControlOperationsPersec,FileDataOperationsPersec,FileReadBytesPersec,FileReadOperationsPersec,FileWriteBytesPersec,FileWriteOperationsPersec,FloatingEmulationsPersec,Frequency_Object,Frequency_PerfTime,Frequency_Sys100NS,Name,PercentRegistryQuotaInUse,PercentRegistryQuotaInUse_Base,Processes,ProcessorQueueLength,SystemCallsPersec,SystemUpTime,Threads,Timestamp_Object,Timestamp_PerfTime,Timestamp_Sys100NS
+0,,1118351,,2890,31943051,418525,140955,934569238,118791,683891665,22164,0,10000000,2742190,10000000,,111114488,4294967295,80,7,11019344,131831240594872588,1440,131831244484937039,1063437622,131831316484930000
+[computer_system]
+AdminPasswordStatus,AutomaticManagedPagefile,AutomaticResetBootOption,AutomaticResetCapability,BootOptionOnLimit,BootOptionOnWatchDog,BootROMSupported,BootStatus,BootupState,Caption,ChassisBootupState,ChassisSKUNumber,CreationClassName,CurrentTimeZone,DaylightInEffect,Description,DNSHostName,Domain,DomainRole,EnableDaylightSavingsTime,FrontPanelResetStatus,HypervisorPresent,InfraredSupported,InitialLoadInfo,InstallDate,KeyboardPasswordStatus,LastLoadInfo,Manufacturer,Model,Name,NameFormat,NetworkServerModeEnabled,NumberOfLogicalProcessors,NumberOfProcessors,OEMLogoBitmap,OEMStringArray,PartOfDomain,PauseAfterReset,PCSystemType,PCSystemTypeEx,PowerManagementCapabilities,PowerManagementSupported,PowerOnPasswordStatus,PowerState,PowerSupplyState,PrimaryOwnerContact,PrimaryOwnerName,ResetCapability,ResetCount,ResetLimit,Roles,Status,SupportContactDescription,SystemFamily,SystemSKUNumber,SystemStartupDelay,SystemStartupOptions,SystemStartupSetting,SystemType,ThermalState,TotalPhysicalMemory,UserName,WakeUpType,Workgroup
+3,1,1,1,,,1,,Normal boot,DESKTOP-NJF7U63,3,,Win32_ComputerSystem,120,1,AT/AT COMPATIBLE,DESKTOP-NJF7U63,WORKGROUP,0,1,3,1,0,,,3,,innotek GmbH,VirtualBox,DESKTOP-NJF7U63,,1,1,1,,<array>,0,-1,2,2,,,3,0,3,,Windows-Benutzer,1,65535,65535,<array>,OK,,Virtual Machine,,,,,x64-based PC,3,3145256960,DESKTOP-NJF7U63\Rika,6,WORKGROUP
+<<<>>>
+
+<<<>>>
+<<<systemtime>>>
+1538650858
+<<<check_mk>>>
+Version: 1.5.0p2
+BuildDate: Aug 14 2018
+AgentOS: windows
+Hostname: DESKTOP-NJF7U63
+Architecture: 64bit
+WorkingDirectory: C:\Windows\system32
+ConfigFile: C:\Program Files (x86)\check_mk\check_mk.ini
+LocalConfigFile: C:\Program Files (x86)\check_mk\check_mk_local.ini
+AgentDirectory: C:\Program Files (x86)\check_mk
+PluginsDirectory: C:\Program Files (x86)\check_mk\plugins
+StateDirectory: C:\Program Files (x86)\check_mk\state
+ConfigDirectory: C:\Program Files (x86)\check_mk\config
+TempDirectory: C:\Program Files (x86)\check_mk\temp
+LogDirectory: C:\Program Files (x86)\check_mk\log
+SpoolDirectory: C:\Program Files (x86)\check_mk\spool
+LocalDirectory: C:\Program Files (x86)\check_mk\local
+ScriptStatistics: Plugin C:0 E:0 T:0 Local C:0 E:0 T:0
+OnlyFrom: 0.0.0.0/0
+<<<uptime>>>
+400
+<<<df:sep(9)>>>
+C:\	NTFS	51864572	19572672	32291900	38%	C:\
+<<<ps:sep(9)>>>
+(SYSTEM,64,8,0,0,0,0,2611875000,0,1,398)	System Idle Process
+(SYSTEM,3752,136,0,4,0,0,173593750,2882,112,398)	System
+(SYSTEM,2147523944,932,0,296,0,156250,1406250,52,4,398)	smss.exe
+(SYSTEM,2147571156,4136,0,396,1,781250,1875000,366,11,387)	csrss.exe
+(SYSTEM,2147571472,5616,0,468,1,0,625000,160,5,387)	wininit.exe
+(SYSTEM,2147589288,4320,0,480,1,3125000,3125000,435,12,387)	csrss.exe
+(\\NT-AUTORITÄT\SYSTEM,2147579812,7836,0,540,2,156250,937500,247,6,387)	winlogon.exe
+(SYSTEM,2147549120,6936,0,564,3,3593750,5781250,374,21,387)	services.exe
+(\\NT-AUTORITÄT\SYSTEM,2147568120,12604,0,572,6,7812500,5156250,1211,11,387)	lsass.exe
+(\\NT-AUTORITÄT\SYSTEM,2147629040,24796,0,696,9,7031250,10312500,902,35,386)	svchost.exe
+(\\Font Driver Host\UMFD-1,2147589068,5900,0,712,2,312500,937500,65,6,386)	fontdrvhost.exe
+(\\Font Driver Host\UMFD-0,2147577584,3028,0,720,1,0,156250,45,6,386)	fontdrvhost.exe
+(\\NT-AUTORITÄT\Netzwerkdienst,2147571580,10916,0,820,5,15937500,11093750,887,19,386)	svchost.exe
+(\\Window Manager\DWM-1,2147738864,79692,0,920,46,4062500,3125000,624,13,386)	dwm.exe
+(\\NT-AUTORITÄT\Lokaler Dienst,2147705160,18596,0,1016,13,9843750,3750000,654,25,386)	svchost.exe
+(\\NT-AUTORITÄT\Netzwerkdienst,2147624592,10360,0,240,4,2812500,1562500,547,29,386)	svchost.exe
+(\\NT-AUTORITÄT\SYSTEM,2147755084,48152,0,88,21,18125000,20000000,1980,69,386)	svchost.exe
+(\\NT-AUTORITÄT\Lokaler Dienst,2147630536,26852,0,8,20,5000000,5156250,758,21,386)	svchost.exe
+(\\NT-AUTORITÄT\SYSTEM,2151850288,20144,0,400,6,4218750,9687500,615,19,386)	svchost.exe
+(\\NT-AUTORITÄT\Lokaler Dienst,2147681204,26756,0,1156,11,3281250,2500000,917,45,386)	svchost.exe
+(\\NT-AUTORITÄT\SYSTEM,2147787824,48584,0,1172,22,55156250,25000000,1018,30,386)	svchost.exe
+(\\NT-AUTORITÄT\Netzwerkdienst,2147710536,24056,0,1224,14,6875000,6875000,1065,38,385)	svchost.exe
+(\\NT-AUTORITÄT\SYSTEM,108636,6744,0,1396,2,312500,1093750,194,11,385)	VBoxService.exe
+(SYSTEM,62208,46080,0,1492,0,0,23281250,0,46,385)	Memory Compression
+(\\NT-AUTORITÄT\Lokaler Dienst,2147574504,11192,0,1572,2,0,625000,312,11,385)	svchost.exe
+(\\NT-AUTORITÄT\Lokaler Dienst,2147551148,5508,0,1668,1,156250,0,123,5,385)	svchost.exe
+(\\NT-AUTORITÄT\Lokaler Dienst,2147565184,7912,0,1680,2,156250,312500,301,11,385)	svchost.exe
+(\\NT-AUTORITÄT\SYSTEM,2147595152,15020,0,1708,4,12500000,3906250,222,8,385)	svchost.exe
+(\\NT-AUTORITÄT\SYSTEM,2147583592,10132,0,1908,5,156250,937500,413,13,384)	spoolsv.exe
+(SYSTEM,2147695952,74424,0,2072,59,50781250,11250000,1157,36,383)	svchost.exe
+(\\NT-AUTORITÄT\Lokaler Dienst,2147565296,8832,0,2140,6,312500,937500,172,7,383)	audiodg.exe
+(\\DESKTOP-NJF7U63\Rika,2147643852,24304,0,2188,5,5625000,5468750,676,18,383)	sihost.exe
+(\\DESKTOP-NJF7U63\Rika,2147692900,29140,0,2196,7,5312500,1875000,489,15,383)	svchost.exe
+(\\DESKTOP-NJF7U63\Rika,2147641252,15416,0,2348,7,1250000,1406250,294,11,383)	taskhostw.exe
+(\\NT-AUTORITÄT\Netzwerkdienst,2147548732,6420,0,2400,1,156250,156250,148,5,383)	svchost.exe
+(\\NT-AUTORITÄT\SYSTEM,2147661636,21212,0,2516,7,5625000,5000000,519,13,383)	svchost.exe
+(\\NT-AUTORITÄT\SYSTEM,54772,3572,0,2556,0,0,0,77,3,383)	openvpnserv.exe
+(SYSTEM,2147580268,11180,0,2576,2,312500,156250,305,8,382)	SecurityHealthService.exe
+(SYSTEM,2148073384,93264,0,2616,121,190312500,30468750,822,30,382)	MsMpEng.exe
+(\\DESKTOP-NJF7U63\Rika,2147607596,12036,0,2724,2,1093750,5000000,383,9,382)	ctfmon.exe
+(\\DESKTOP-NJF7U63\Rika,2148094524,130028,0,2920,35,26875000,31406250,2401,73,382)	explorer.exe
+(SYSTEM,2147592760,8124,0,3216,5,781250,156250,192,6,378)	NisSrv.exe
+(\\DESKTOP-NJF7U63\Rika,2147885720,64460,0,3704,21,9062500,2968750,987,28,376)	ShellExperienceHost.exe
+(\\DESKTOP-NJF7U63\Rika,2181875332,136680,0,3840,80,21250000,7500000,1079,38,375)	SearchUI.exe
+(\\DESKTOP-NJF7U63\Rika,2147646464,21236,0,3968,6,3281250,3125000,465,17,374)	RuntimeBroker.exe
+(\\DESKTOP-NJF7U63\Rika,2147644736,21612,0,4080,5,3437500,3437500,320,10,373)	RuntimeBroker.exe
+(\\DESKTOP-NJF7U63\Rika,2147651256,22768,0,3148,6,2812500,6093750,455,6,373)	RuntimeBroker.exe
+(\\NT-AUTORITÄT\SYSTEM,2147689048,21168,0,4224,19,4062500,2656250,630,17,372)	SearchIndexer.exe
+(\\DESKTOP-NJF7U63\Rika,153996,10692,0,4232,4,0,1562500,266,7,372)	SkypeHost.exe
+(\\DESKTOP-NJF7U63\Rika,2182061600,41728,0,4644,21,3281250,468750,668,19,370)	smartscreen.exe
+(\\NT-AUTORITÄT\Lokaler Dienst,2147571408,8492,0,4880,3,312500,468750,336,16,367)	svchost.exe
+(\\DESKTOP-NJF7U63\Rika,2147637712,12180,0,2508,5,156250,1406250,237,9,366)	dllhost.exe
+(\\DESKTOP-NJF7U63\Rika,2147609036,8596,0,5340,1,156250,156250,160,3,360)	MSASCuiL.exe
+(\\DESKTOP-NJF7U63\Rika,145340,9524,0,5420,2,625000,468750,266,13,359)	VBoxTray.exe
+(\\DESKTOP-NJF7U63\Rika,414800,30912,0,5580,16,5156250,5156250,679,20,357)	OneDrive.exe
+(\\DESKTOP-NJF7U63\Rika,120568,7244,0,5976,1,156250,468750,156,2,354)	openvpn-gui.exe
+(\\DESKTOP-NJF7U63\Rika,225200,13812,0,6024,9,625000,468750,412,14,353)	concentr.exe
+(\\DESKTOP-NJF7U63\Rika,218792,18404,0,6088,7,8593750,5000000,564,41,352)	Receiver.exe
+(\\DESKTOP-NJF7U63\Rika,125076,7760,0,5244,1,1093750,1406250,319,5,352)	redirector.exe
+(\\DESKTOP-NJF7U63\Rika,173212,14088,0,5628,4,1093750,625000,473,19,349)	AuthManSvr.exe
+(\\DESKTOP-NJF7U63\Rika,239792,10640,0,6360,14,1562500,156250,302,12,345)	SelfServicePlugin.exe
+(\\DESKTOP-NJF7U63\Rika,187716,12032,0,6460,4,156250,781250,348,22,345)	wfcrun32.exe
+(\\DESKTOP-NJF7U63\Rika,2147567560,2016,0,6216,1,0,156250,117,4,339)	RuntimeBroker.exe
+(\\DESKTOP-NJF7U63\Rika,2147721216,25952,0,2664,6,781250,937500,349,10,299)	ApplicationFrameHost.exe
+(\\DESKTOP-NJF7U63\Rika,2147953244,78620,0,6448,24,8125000,6718750,1182,43,298)	MicrosoftEdge.exe
+(\\DESKTOP-NJF7U63\Rika,2181256768,35940,0,4376,8,1875000,3906250,637,12,298)	browser_broker.exe
+(\\NT-AUTORITÄT\Lokaler Dienst,2147559928,6876,0,6592,1,0,156250,139,5,298)	svchost.exe
+(\\NT-AUTORITÄT\Lokaler Dienst,2147552676,5288,0,6680,1,156250,0,111,4,298)	Windows.WARP.JITService.exe
+(\\DESKTOP-NJF7U63\Rika,2147674484,26336,0,6808,6,625000,1875000,327,8,298)	RuntimeBroker.exe
+(\\DESKTOP-NJF7U63\Rika,2182037548,117268,0,4460,80,24843750,7656250,1172,54,297)	MicrosoftEdgeCP.exe
+(\\DESKTOP-NJF7U63\Rika,2181247800,27812,0,3596,7,3281250,1093750,549,22,297)	MicrosoftEdgeCP.exe
+(\\NT-AUTORITÄT\SYSTEM,2147607700,18020,0,6840,4,625000,468750,441,12,296)	svchost.exe
+(\\DESKTOP-NJF7U63\Rika,2181263468,26000,0,2080,5,312500,1093750,509,16,275)	MicrosoftEdgeCP.exe
+(\\NT-AUTORITÄT\SYSTEM,2147625900,16724,0,2416,7,1250000,1562500,258,7,275)	msiexec.exe
+(\\DESKTOP-NJF7U63\Rika,2181262672,26160,0,2272,5,312500,625000,510,15,274)	MicrosoftEdgeCP.exe
+(\\NT-AUTORITÄT\SYSTEM,124640,12344,0,5468,4,312500,1562500,290,9,263)	check_mk_agent.exe
+(\\NT-AUTORITÄT\SYSTEM,2147652108,36000,0,4588,25,6250000,4218750,413,14,142)	WmiPrvSE.exe
+(\\NT-AUTORITÄT\Netzwerkdienst,2147561264,10472,0,5152,3,4531250,3437500,182,10,58)	WmiPrvSE.exe
+(\\NT-AUTORITÄT\SYSTEM,2147553628,7652,0,6336,1,156250,0,165,6,15)	WmiApSrv.exe
+(\\NT-AUTORITÄT\Lokaler Dienst,2147568736,14876,0,7112,8,1093750,1250000,258,10,15)	WmiPrvSE.exe
+<<<mem>>>
+MemTotal:      3071540 kB
+MemFree:       1682980 kB
+SwapTotal:     524288 kB
+SwapFree:      485980 kB
+PageTotal:     3595828 kB
+PageFree:      2168960 kB
+VirtualTotal:  137438953344 kB
+VirtualFree:   137438832800 kB
+<<<fileinfo:sep(124)>>>
+1538650861
+<<<services>>>
+AJRouter stopped/demand AllJoyn-Routerdienst
+ALG stopped/demand Gatewaydienst auf Anwendungsebene
+AppIDSvc stopped/demand Anwendungsidentität
+Appinfo running/demand Anwendungsinformationen
+AppMgmt stopped/demand Anwendungsverwaltung
+AppReadiness stopped/demand App-Vorbereitung
+AppVClient stopped/disabled Microsoft App-V Client
+AppXSvc running/demand AppX-Bereitstellungsdienst (AppXSVC)
+AssignedAccessManagerSvc stopped/demand AssignedAccessManager-Dienst
+AudioEndpointBuilder running/auto Windows-Audio-Endpunkterstellung
+Audiosrv running/auto Windows-Audio
+AxInstSV stopped/demand ActiveX-Installer (AxInstSV)
+BDESVC stopped/demand BitLocker-Laufwerkverschlüsselungsdienst
+BFE running/auto Basisfiltermodul
+BITS stopped/demand Intelligenter Hintergrundübertragungsdienst
+BrokerInfrastructure running/auto Infrastrukturdienst für Hintergrundaufgaben
+BthHFSrv stopped/demand Bluetooth-Freisprechdienst
+bthserv stopped/demand Bluetooth-Unterstützungsdienst
+camsvc stopped/demand Manager-Dienst für den Funktionszugriff
+CDPSvc running/auto Plattformdienst für verbundene Geräte
+CertPropSvc running/demand Zertifikatverteilung
+ClipSVC running/demand Clientlizenzdienst (ClipSVC)
+COMSysApp stopped/demand COM+-Systemanwendung
+CoreMessagingRegistrar running/auto CoreMessaging
+CryptSvc running/auto Kryptografiedienste
+CscService stopped/demand Offlinedateien
+DcomLaunch running/auto DCOM-Server-Prozessstart
+defragsvc stopped/demand Laufwerke optimieren
+DeviceAssociationService stopped/demand Gerätezuordnungsdienst
+DeviceInstall stopped/demand Geräteinstallationsdienst
+DevQueryBroker stopped/demand Broker für DevQuery-Hintergrundermittlung
+Dhcp running/auto DHCP-Client
+diagnosticshub.standardcollector.service stopped/demand Standardsammlungsdienst des Microsoft(R)-Diagnose-Hubs
+diagsvc stopped/demand Diagnostic Execution Service
+DiagTrack running/auto Benutzererfahrung und Telemetrie im verbundenen Modus
+DmEnrollmentSvc stopped/demand Registrierungsdienst für die Geräteverwaltung
+dmwappushservice stopped/demand dmwappushsvc
+Dnscache running/auto DNS-Client
+DoSvc running/auto Übermittlungsoptimierung
+dot3svc stopped/demand Automatische Konfiguration (verkabelt)
+DPS running/auto Diagnoserichtliniendienst
+DsmSvc stopped/demand Geräteinstallations-Manager
+DsSvc stopped/demand Datenfreigabedienst
+DusmSvc running/auto Datennutzung
+Eaphost stopped/demand Extensible Authentication-Protokoll
+EFS stopped/demand Verschlüsselndes Dateisystem (EFS)
+embeddedmode stopped/demand Eingebetteter Modus
+EntAppSvc stopped/demand Verwaltungsdienst für Unternehmens-Apps
+EventLog running/auto Windows-Ereignisprotokoll
+EventSystem running/auto COM+-Ereignissystem
+Fax stopped/demand Fax
+fdPHost running/demand Funktionssuchanbieter-Host
+FDResPub running/demand Funktionssuche-Ressourcenveröffentlichung
+fhsvc stopped/demand Dateiversionsverlauf-Dienst
+FontCache running/auto Windows-Dienst für Schriftartencache
+FrameServer stopped/demand Windows-Kamera-FrameServer
+gpsvc running/auto Gruppenrichtlinienclient
+GraphicsPerfSvc stopped/demand GraphicsPerfSvc
+hidserv stopped/demand Eingabegerätedienst
+HomeGroupListener stopped/demand Heimnetzgruppen-Listener
+HomeGroupProvider running/demand Heimnetzgruppen-Anbieter
+HvHost stopped/demand HV-Hostdienst
+icssvc stopped/demand Windows-Dienst für mobile Hotspots
+IKEEXT running/auto IKE- und AuthIP IPsec-Schlüsselerstellungsmodule
+InstallService running/demand Windows Store-Installationsdienst
+iphlpsvc running/auto IP-Hilfsdienst
+IpxlatCfgSvc stopped/demand Konfigurationsdienst für die IP-Übersetzung
+irmon stopped/demand Infrarotüberwachungsdienst
+KeyIso running/demand CNG-Schlüsselisolation
+KtmRm stopped/demand KtmRm für Distributed Transaction Coordinator
+LanmanServer running/auto Server
+LanmanWorkstation running/auto Arbeitsstationsdienst
+lfsvc running/demand Geolocation-Dienst
+LicenseManager running/demand Windows-Lizenz-Manager-Dienst
+lltdsvc stopped/demand Verbindungsschicht-Topologieerkennungs-Zuordnungsprogramm
+lmhosts running/demand TCP/IP-NetBIOS-Hilfsdienst
+LSM running/auto Lokaler Sitzungs-Manager
+LxssManager stopped/demand LxssManager
+MapsBroker stopped/auto Manager für heruntergeladene Karten
+MozillaMaintenance stopped/demand Mozilla Maintenance Service
+MpsSvc running/auto Windows Defender Firewall
+MSDTC stopped/demand Distributed Transaction Coordinator
+MSiSCSI stopped/demand Microsoft iSCSI-Initiator-Dienst
+msiserver running/demand Windows Installer
+NaturalAuthentication stopped/demand Natürliche Authentifizierung
+NcaSvc stopped/demand Netzwerkkonnektivitäts-Assistent
+NcbService running/demand Netzwerkverbindungsbroker
+NcdAutoSetup stopped/demand Autom. Setup von Geräten, die mit dem Netzwerk verbunden sind
+Netlogon stopped/demand Anmeldedienst
+Netman stopped/demand Netzwerkverbindungen
+netprofm running/demand Netzwerklistendienst
+NetSetupSvc stopped/demand Netzwerkeinrichtungsdienst
+NetTcpPortSharing stopped/disabled Net.Tcp-Portfreigabedienst
+NgcCtnrSvc stopped/demand Microsoft Passport-Container
+NgcSvc stopped/demand Microsoft Passport
+NlaSvc running/auto NLA (Network Location Awareness)
+nsi running/auto Netzwerkspeicher-Schnittstellendienst
+OpenVPNService stopped/demand OpenVPN Service
+OpenVPNServiceInteractive running/auto OpenVPN Interactive Service
+p2pimsvc stopped/demand Peernetzwerkidentitäts-Manager
+p2psvc stopped/demand Peernetzwerk-Gruppenzuordnung
+PcaSvc running/demand Programmkompatibilitäts-Assistent-Dienst
+PeerDistSvc stopped/demand BranchCache
+PerfHost stopped/demand Leistungsindikator-DLL-Host
+PhoneSvc stopped/demand Telefondienst
+pla stopped/demand Leistungsprotokolle und -warnungen
+PlugPlay running/demand Plug & Play
+PNRPAutoReg stopped/demand PNRP-Computernamenveröffentlichungs-Dienst
+PNRPsvc stopped/demand Peer Name Resolution-Protokoll
+PolicyAgent running/demand IPsec-Richtlinien-Agent
+Power running/auto Stromversorgung
+PrintNotify stopped/demand Printer Extensions and Notifications
+ProfSvc running/auto Benutzerprofildienst
+PushToInstall stopped/demand Windows PushToInstall-Dienst
+QWAVE stopped/demand Verbessertes Windows-Audio/Video-Streaming
+RasAuto stopped/demand Verwaltung für automatische RAS-Verbindung
+RasMan stopped/demand RAS-Verbindungsverwaltung
+RemoteAccess stopped/disabled Routing und RAS
+RemoteRegistry stopped/disabled Remoteregistrierung
+RetailDemo stopped/demand Dienst für Einzelhandelsdemos
+RmSvc stopped/demand Funkverwaltungsdienst
+RpcEptMapper running/auto RPC-Endpunktzuordnung
+RpcLocator stopped/demand RPC-Locator
+RpcSs running/auto Remoteprozeduraufruf (RPC)
+SamSs running/auto Sicherheitskonto-Manager
+SCardSvr stopped/disabled Smartcard
+ScDeviceEnum stopped/demand Smartcard-Geräteaufzählungsdienst
+Schedule running/auto Aufgabenplanung
+SCPolicySvc stopped/demand Richtlinie zum Entfernen der Scmartcard
+SDRSVC stopped/demand Windows-Sicherung
+seclogon stopped/demand Sekundäre Anmeldung
+SecurityHealthService running/auto Windows Defender Security Center Service
+SEMgrSvc running/demand Zahlungs- und NFC/SE-Manager
+SENS running/auto Benachrichtigungsdienst für Systemereignisse
+Sense stopped/demand Windows Defender Advanced Threat Protection-Dienst
+SensorDataService stopped/demand Sensordatendienst
+SensorService stopped/demand Sensordienst
+SensrSvc stopped/demand Sensorüberwachungsdienst
+SessionEnv running/demand Konfiguration für Remotedesktops
+SharedAccess stopped/demand Gemeinsame Nutzung der Internetverbindung
+SharedRealitySvc stopped/demand Dienst für räumliche Daten
+ShellHWDetection running/auto Shellhardwareerkennung
+shpamsvc stopped/disabled Shared PC Account Manager
+smphost stopped/demand Microsoft-SMP für Speicherplätze
+SmsRouter stopped/demand Microsoft Windows SMS-Routerdienst.
+SNMPTRAP stopped/demand SNMP-Trap
+spectrum stopped/demand Windows Perception Service
+Spooler running/auto Druckwarteschlange
+sppsvc stopped/auto Software Protection
+SSDPSRV running/demand SSDP-Suche
+SstpSvc stopped/demand SSTP-Dienst
+StateRepository running/demand StateRepository-Dienst
+stisvc stopped/demand Windows-Bilderfassung (WIA)
+StorSvc running/demand Speicherdienst
+svsvc stopped/demand Echtzeit-Datenträgerprüfung
+swprv stopped/demand Microsoft-Softwareschattenkopie-Anbieter
+SysMain running/auto Superfetch
+SystemEventsBroker running/auto Systemereignissebroker
+TabletInputService running/demand Dienst für Bildschirmtastatur und Schreibbereich
+TapiSrv stopped/demand Telefonie
+TermService running/demand Remotedesktopdienste
+Themes running/auto Designs
+TieringEngineService stopped/demand Storage Tiers Management
+tiledatamodelsvc running/demand Kacheldaten-Modellserver
+TimeBrokerSvc running/demand Zeitbroker
+TokenBroker running/demand Web Account Manager
+TrkWks running/auto Überwachung verteilter Verknüpfungen (Client)
+TrustedInstaller stopped/demand Windows Modules Installer
+tzautoupdate stopped/disabled Automatische Zeitzonenaktualisierung
+UevAgentService stopped/disabled User Experience Virtualization-Dienst
+UI0Detect stopped/demand Erkennung interaktiver Dienste
+UmRdpService running/demand Anschlussumleitung für Remotedesktopdienst im Benutzermodus
+upnphost stopped/demand UPnP-Gerätehost
+UserManager running/auto Benutzer-Manager
+UsoSvc running/demand Update Orchestrator Service
+VaultSvc running/demand Anmeldeinformationsverwaltung
+VBoxService running/auto VirtualBox Guest Additions Service
+vds stopped/demand Virtueller Datenträger
+vmicguestinterface stopped/demand Hyper-V-Gastdienstschnittstelle
+vmicheartbeat stopped/demand Hyper-V-Taktdienst
+vmickvpexchange stopped/demand Hyper-V-Datenaustauschdienst
+vmicrdv stopped/demand Hyper-V-Remotedesktopvirtualisierungsdienst
+vmicshutdown stopped/demand Hyper-V-Dienst zum Herunterfahren des Gasts
+vmictimesync stopped/demand Hyper-V-Dienst für Zeitsynchronisierung
+vmicvmsession stopped/demand Hyper-V PowerShell Direct-Dienst
+vmicvss stopped/demand Hyper-V-Volumeschattenkopie-Anforderer
+VSS stopped/demand Volumeschattenkopie
+W32Time stopped/demand Windows-Zeitgeber
+WalletService stopped/demand WalletService
+WarpJITSvc running/demand WarpJITSvc
+wbengine stopped/demand Blockebenen-Sicherungsmodul
+WbioSrvc stopped/demand Windows-Biometriedienst
+Wcmsvc running/auto Windows-Verbindungs-Manager
+wcncsvc stopped/demand Windows-Sofortverbindung - Konfigurationsregistrierungsstelle
+WdiServiceHost running/demand Diagnosediensthost
+WdiSystemHost running/demand Diagnosesystemhost
+WdNisSvc running/demand Windows Defender Antivirus-Netzwerkinspektionsdienst
+WebClient stopped/demand WebClient
+Wecsvc stopped/demand Windows-Ereignissammlung
+WEPHOSTSVC stopped/demand Hostdienst für Windows Encryption Provider
+wercplsupport stopped/demand Unterstützung in der Systemsteuerung unter Lösungen für Probleme
+WerSvc stopped/demand Windows-Fehlerberichterstattungsdienst
+WFDSConMgrSvc stopped/demand Verbindungs-Manager-Dienst von Wi-Fi Direct Services
+WiaRpc stopped/demand Ereignisse zum Abrufen von Standbildern
+WinDefend running/auto Windows Defender Antivirus Service
+WinHttpAutoProxySvc running/demand WinHTTP-Web Proxy Auto-Discovery-Dienst
+Winmgmt running/auto Windows-Verwaltungsinstrumentation
+WinRM stopped/demand Windows-Remoteverwaltung (WS-Verwaltung)
+wisvc running/demand Windows-Insider-Dienst
+WlanSvc stopped/demand Automatische WLAN-Konfiguration
+wlidsvc running/demand Anmelde-Assistent für Microsoft-Konten
+wlpasvc stopped/demand Dienst "Assistent für lokale Profile"
+wmiApSrv running/demand WMI-Leistungsadapter
+WMPNetworkSvc stopped/demand Windows Media Player-Netzwerkfreigabedienst
+workfolderssvc stopped/demand Arbeitsordner
+WPDBusEnum stopped/demand Enumeratordienst für tragbare Geräte
+WpnService running/auto Windows-Pushbenachrichtigungssystemdienst
+wscsvc running/auto Sicherheitscenter
+WSearch running/auto Windows Search
+wuauserv running/demand Windows Update
+WwanSvc stopped/demand WWAN - automatische Konfiguration
+xbgm stopped/demand Xbox Game Monitoring
+XblAuthManager stopped/demand Xbox Live Authentifizierungs-Manager
+XblGameSave stopped/demand Xbox Live-Spiele speichern
+XboxGipSvc stopped/demand Xbox Accessory Management Service
+XboxNetApiSvc stopped/demand Xbox Live-Netzwerkservice
+CDPUserSvc_1880a running/auto CDPUserSvc_1880a
+DevicesFlowUserSvc_1880a stopped/demand DevicesFlowUserSvc_1880a
+MessagingService_1880a stopped/demand MessagingService_1880a
+OneSyncSvc_1880a running/auto OneSyncSvc_1880a
+PimIndexMaintenanceSvc_1880a stopped/demand PimIndexMaintenanceSvc_1880a
+PrintWorkflowUserSvc_1880a stopped/demand PrintWorkflowUserSvc_1880a
+UnistoreSvc_1880a stopped/demand UnistoreSvc_1880a
+UserDataSvc_1880a stopped/demand UserDataSvc_1880a
+WpnUserService_1880a running/auto WpnUserService_1880a
+Check_MK_Agent running/auto Check_MK_Agent
+<<<winperf_if>>>
+1538650861.21 510 2742190
+2 instances: Intel[R]_PRO_1000_MT_Desktop_Adapter Intel[R]_PRO_1000_MT_Desktop_Adapter__2
+-122 41301797 91045 bulk_count
+-110 47586 142 bulk_count
+-244 36824 17 bulk_count
+-58 10762 125 bulk_count
+10 1000000000 1000000000 large_rawcount
+-246 40217523 1140 bulk_count
+14 36824 16 bulk_count
+16 0 1 bulk_count
+18 0 0 large_rawcount
+20 0 0 large_rawcount
+22 0 0 large_rawcount
+-4 1084274 89905 bulk_count
+26 10659 30 bulk_count
+28 103 95 bulk_count
+30 0 0 large_rawcount
+32 0 0 large_rawcount
+34 0 0 large_rawcount
+1086 0 0 large_rawcount
+1088 0 0 large_rawcount
+1090 0 0 bulk_count
+1092 0 0 bulk_count
+1094 0 0 large_rawcount
+<<<winperf_phydisk>>>
+1538650861.23 234 2742190
+2 instances: 0_C: _Total
+-36 0 0 rawcount
+-34 514454916 514454916 type(20570500)
+-34 131831244612278156 131831244612278156 type(40030500)
+1166 514454916 514454916 type(550500)
+-32 349580795 349580795 type(20570500)
+-32 131831244612278156 131831244612278156 type(40030500)
+1168 349580795 349580795 type(550500)
+-30 164874121 164874121 type(20570500)
+-30 131831244612278156 131831244612278156 type(40030500)
+1170 164874121 164874121 type(550500)
+-28 141073312 141073312 average_timer
+-28 31792 31792 average_base
+-26 95861696 95861696 average_timer
+-26 23385 23385 average_base
+-24 45211616 45211616 average_timer
+-24 8407 8407 average_base
+-22 31792 31792 counter
+-20 23385 23385 counter
+-18 8407 8407 counter
+-16 1585861120 1585861120 bulk_count
+-14 869116416 869116416 bulk_count
+-12 716744704 716744704 bulk_count
+-10 1585861120 1585861120 average_bulk
+-10 31792 31792 average_base
+-8 869116416 869116416 average_bulk
+-8 23385 23385 average_base
+-6 716744704 716744704 average_bulk
+-6 8407 8407 average_base
+1248 3507270971 3507270971 type(20570500)
+1248 131831244612278156 131831244612278156 type(40030500)
+1250 4726 4726 counter
+<<<winperf_processor>>>
+1538650861.23 238 2742190
+2 instances: 0 _Total
+-232 2611875000 2611875000 100nsec_timer_inv
+-96 771718750 771718750 100nsec_timer
+-94 619843750 619843750 100nsec_timer
+-90 257029 257029 counter
+458 12187500 12187500 100nsec_timer
+460 18437500 18437500 100nsec_timer
+1096 76658 76658 counter
+1098 3 3 rawcount
+1508 2525759600 2525759600 100nsec_timer
+1510 2525759600 2525759600 100nsec_timer
+1512 0 0 100nsec_timer
+1514 0 0 100nsec_timer
+1516 38957 38957 bulk_count
+1518 0 0 bulk_count
+1520 0 0 bulk_count
+<<<logwatch>>>
+[[[Application]]]
+C Oct 04 13:00:46 49152.1008 Perflib BITS C:\Windows\System32\bitsperf.dll 8                                                            
+[[[HardwareEvents]]]
+[[[Internet Explorer]]]
+[[[Key Management Service]]]
+[[[Security]]]
+. Oct 04 13:00:46 0.4624 Microsoft-Windows-Security-Auditing Ein Konto wurde erfolgreich angemeldet.    Antragsteller:  	Sicherheits-ID:		S-1-5-18  	Kontoname:		DESKTOP-NJF7U63$  	Kontodomäne:		WORKGROUP  	Anmelde-ID:		0x3e7    Anmeldeinformationen:  	Anmeldetyp:		5  	Eingeschränkter Administratormodus:	-  	Virtuelles Konto:		%%1843  	Token mit erhöhten Rechten:		%%1842    Identitätswechselebene:		%%1833    Neue Anmeldung:  	Sicherheits-ID:		S-1-5-18  	Kontoname:		SYSTEM  	Kontodomäne:		NT-AUTORITÄT  	Anmelde-ID:		0x3e7  	Verknüpfte Anmelde-ID:		0x0  	Netzwerk-Kontoname:	-  	Netzwerk-Kontodomäne:	-  	Anmelde-GUID:		{00000000-0000-0000-0000-000000000000}    Prozessinformationen:  	Prozess-ID:		0x234  	Prozessname:		C:\Windows\System32\services.exe    Netzwerkinformationen:  	Arbeitsstationsname:	-  	Quellnetzwerkadresse:	-  	Quellport:		-    Detaillierte Authentifizierungsinformationen:  	Anmeldeprozess:		Advapi    	Authentifizierungspaket:	Negotiate  	Übertragene Dienste:	-  	Paketname (nur NTLM):	-  	Schlüssellänge:		0    Dieses Ereignis wird beim Erstellen einer Anmeldesitzung generiert. Es wird auf dem Computer generiert, auf den zugegriffen wurde.    Die Antragstellerfelder geben das Konto auf dem lokalen System an, von dem die Anmeldung angefordert wurde. Dies ist meistens ein Dienst wie der Serverdienst oder ein lokaler Prozess wie "Winlogon.exe" oder "Services.exe".    Das Anmeldetypfeld gibt den jeweiligen Anmeldetyp an. Die häufigsten Typen sind 2 (interaktiv) und 3 (Netzwerk).    Die Felder für die neue Anmeldung geben das Konto an, für das die neue Anmeldung erstellt wurde, d. h. das angemeldete Konto.    Die Netzwerkfelder geben die Quelle einer Remoteanmeldeanforderung an. Der Arbeitsstationsname ist nicht immer verfügbar und kann in manchen Fällen leer bleiben.    Das Feld für die Identitätswechselebene gibt an, in welchem Umfang ein Prozess in der Anmeldesitzung einen Identitätswechsel vornehmen kann.    Die Felder für die Authentifizierungsinformationen enthalten detaillierte Informationen zu dieser speziellen Anmeldeanforderung.  	- Die Anmelde-GUID ist ein eindeutiger Bezeichner, der verwendet werden kann, um dieses Ereignis mit einem KDC-Ereignis zu korrelieren.  	- Die übertragenen Dienste geben an, welche Zwischendienste an der Anmeldeanforderung beteiligt waren.  	- Der Paketname gibt das in den NTLM-Protokollen verwendete Unterprotokoll an.  	- Die Schlüssellänge gibt die Länge des generierten Sitzungsschlüssels an. Wenn kein Sitzungsschlüssel angefordert wurde, ist dieser Wert 0.  
+. Oct 04 13:00:46 0.4672 Microsoft-Windows-Security-Auditing Einer neuen Anmeldung wurden besondere Rechte zugewiesen.    Antragsteller:  	Sicherheits-ID:		S-1-5-18  	Kontoname:		SYSTEM  	Kontodomäne:		NT-AUTORITÄT  	Anmelde-ID:		0x3e7    Berechtigungen:		SeAssignPrimaryTokenPrivilege  			SeTcbPrivilege  			SeSecurityPrivilege  			SeTakeOwnershipPrivilege  			SeLoadDriverPrivilege  			SeBackupPrivilege  			SeRestorePrivilege  			SeDebugPrivilege  			SeAuditPrivilege  			SeSystemEnvironmentPrivilege  			SeImpersonatePrivilege  			SeDelegateSessionUserImpersonatePrivilege  
+[[[System]]]
+. Oct 04 13:00:53 0.44 Microsoft-Windows-WindowsUpdateClient Windows Update hat mit dem Herunterladen eines Updates begonnen.  
+. Oct 04 13:00:53 0.44 Microsoft-Windows-WindowsUpdateClient Windows Update hat mit dem Herunterladen eines Updates begonnen.  
+. Oct 04 13:00:53 0.44 Microsoft-Windows-WindowsUpdateClient Windows Update hat mit dem Herunterladen eines Updates begonnen.  
+[[[Windows PowerShell]]]
+<<<dotnet_clrmemory:sep(44)>>>
+AllocatedBytesPersec,Caption,Description,FinalizationSurvivors,Frequency_Object,Frequency_PerfTime,Frequency_Sys100NS,Gen0heapsize,Gen0PromotedBytesPerSec,Gen1heapsize,Gen1PromotedBytesPerSec,Gen2heapsize,LargeObjectHeapsize,Name,NumberBytesinallHeaps,NumberGCHandles,NumberGen0Collections,NumberGen1Collections,NumberGen2Collections,NumberInducedGC,NumberofPinnedObjects,NumberofSinkBlocksinuse,NumberTotalcommittedBytes,NumberTotalreservedBytes,PercentTimeinGC,PercentTimeinGC_Base,ProcessID,PromotedFinalizationMemoryfromGen0,PromotedMemoryfromGen0,PromotedMemoryfromGen1,Timestamp_Object,Timestamp_PerfTime,Timestamp_Sys100NS
+0,,,0,0,2742190,10000000,0,0,0,0,0,0,_Global_,0,112,0,0,0,0,0,33,0,0,0,4294967295,0,0,0,0,0,1098486834,131831316612740000
+0,,,0,0,2742190,10000000,0,0,0,0,0,0,SelfServicePlugin,0,82,0,0,0,0,0,27,0,0,0,0,0,0,0,0,0,1098486834,131831316612740000
+0,,,0,0,2742190,10000000,0,0,0,0,0,0,concentr,0,30,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,1098486834,131831316612740000
+<<<wmi_cpuload:sep(44)>>>
+[system_perf]
+AlignmentFixupsPersec,Caption,ContextSwitchesPersec,Description,ExceptionDispatchesPersec,FileControlBytesPersec,FileControlOperationsPersec,FileDataOperationsPersec,FileReadBytesPersec,FileReadOperationsPersec,FileWriteBytesPersec,FileWriteOperationsPersec,FloatingEmulationsPersec,Frequency_Object,Frequency_PerfTime,Frequency_Sys100NS,Name,PercentRegistryQuotaInUse,PercentRegistryQuotaInUse_Base,Processes,ProcessorQueueLength,SystemCallsPersec,SystemUpTime,Threads,Timestamp_Object,Timestamp_PerfTime,Timestamp_Sys100NS
+0,,1218870,,2914,38599719,491595,167984,946068300,137937,689460919,30047,0,10000000,2742190,10000000,,111180056,4294967295,80,6,12292911,131831240594872588,1455,131831244612897176,1098521845,131831316612890000
+[computer_system]
+AdminPasswordStatus,AutomaticManagedPagefile,AutomaticResetBootOption,AutomaticResetCapability,BootOptionOnLimit,BootOptionOnWatchDog,BootROMSupported,BootStatus,BootupState,Caption,ChassisBootupState,ChassisSKUNumber,CreationClassName,CurrentTimeZone,DaylightInEffect,Description,DNSHostName,Domain,DomainRole,EnableDaylightSavingsTime,FrontPanelResetStatus,HypervisorPresent,InfraredSupported,InitialLoadInfo,InstallDate,KeyboardPasswordStatus,LastLoadInfo,Manufacturer,Model,Name,NameFormat,NetworkServerModeEnabled,NumberOfLogicalProcessors,NumberOfProcessors,OEMLogoBitmap,OEMStringArray,PartOfDomain,PauseAfterReset,PCSystemType,PCSystemTypeEx,PowerManagementCapabilities,PowerManagementSupported,PowerOnPasswordStatus,PowerState,PowerSupplyState,PrimaryOwnerContact,PrimaryOwnerName,ResetCapability,ResetCount,ResetLimit,Roles,Status,SupportContactDescription,SystemFamily,SystemSKUNumber,SystemStartupDelay,SystemStartupOptions,SystemStartupSetting,SystemType,ThermalState,TotalPhysicalMemory,UserName,WakeUpType,Workgroup
+3,1,1,1,,,1,,Normal boot,DESKTOP-NJF7U63,3,,Win32_ComputerSystem,120,1,AT/AT COMPATIBLE,DESKTOP-NJF7U63,WORKGROUP,0,1,3,1,0,,,3,,innotek GmbH,VirtualBox,DESKTOP-NJF7U63,,1,1,1,,<array>,0,-1,2,2,,,3,0,3,,Windows-Benutzer,1,65535,65535,<array>,OK,,Virtual Machine,,,,,x64-based PC,3,3145256960,DESKTOP-NJF7U63\Rika,6,WORKGROUP
+<<<>>>
+
+<<<>>>
+<<<systemtime>>>
+1538650861

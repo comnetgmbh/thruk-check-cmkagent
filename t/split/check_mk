@@ -1,0 +1,19 @@
+<<<check_mk>>>
+Version: 1.5.0p2
+BuildDate: Aug 14 2018
+AgentOS: windows
+Hostname: DESKTOP-NJF7U63
+Architecture: 64bit
+WorkingDirectory: C:\Windows\system32
+ConfigFile: C:\Program Files (x86)\check_mk\check_mk.ini
+LocalConfigFile: C:\Program Files (x86)\check_mk\check_mk_local.ini
+AgentDirectory: C:\Program Files (x86)\check_mk
+PluginsDirectory: C:\Program Files (x86)\check_mk\plugins
+StateDirectory: C:\Program Files (x86)\check_mk\state
+ConfigDirectory: C:\Program Files (x86)\check_mk\config
+TempDirectory: C:\Program Files (x86)\check_mk\temp
+LogDirectory: C:\Program Files (x86)\check_mk\log
+SpoolDirectory: C:\Program Files (x86)\check_mk\spool
+LocalDirectory: C:\Program Files (x86)\check_mk\local
+ScriptStatistics: Plugin C:0 E:0 T:0 Local C:0 E:0 T:0
+OnlyFrom: 0.0.0.0/0

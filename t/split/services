@@ -1,0 +1,237 @@
+<<<services>>>
+AJRouter stopped/demand AllJoyn-Routerdienst
+ALG stopped/demand Gatewaydienst auf Anwendungsebene
+AppIDSvc stopped/demand Anwendungsidentität
+Appinfo running/demand Anwendungsinformationen
+AppMgmt stopped/demand Anwendungsverwaltung
+AppReadiness stopped/demand App-Vorbereitung
+AppVClient stopped/disabled Microsoft App-V Client
+AppXSvc running/demand AppX-Bereitstellungsdienst (AppXSVC)
+AssignedAccessManagerSvc stopped/demand AssignedAccessManager-Dienst
+AudioEndpointBuilder running/auto Windows-Audio-Endpunkterstellung
+Audiosrv running/auto Windows-Audio
+AxInstSV stopped/demand ActiveX-Installer (AxInstSV)
+BDESVC stopped/demand BitLocker-Laufwerkverschlüsselungsdienst
+BFE running/auto Basisfiltermodul
+BITS stopped/demand Intelligenter Hintergrundübertragungsdienst
+BrokerInfrastructure running/auto Infrastrukturdienst für Hintergrundaufgaben
+BthHFSrv stopped/demand Bluetooth-Freisprechdienst
+bthserv stopped/demand Bluetooth-Unterstützungsdienst
+camsvc stopped/demand Manager-Dienst für den Funktionszugriff
+CDPSvc running/auto Plattformdienst für verbundene Geräte
+CertPropSvc running/demand Zertifikatverteilung
+ClipSVC running/demand Clientlizenzdienst (ClipSVC)
+COMSysApp stopped/demand COM+-Systemanwendung
+CoreMessagingRegistrar running/auto CoreMessaging
+CryptSvc running/auto Kryptografiedienste
+CscService stopped/demand Offlinedateien
+DcomLaunch running/auto DCOM-Server-Prozessstart
+defragsvc stopped/demand Laufwerke optimieren
+DeviceAssociationService stopped/demand Gerätezuordnungsdienst
+DeviceInstall stopped/demand Geräteinstallationsdienst
+DevQueryBroker stopped/demand Broker für DevQuery-Hintergrundermittlung
+Dhcp running/auto DHCP-Client
+diagnosticshub.standardcollector.service stopped/demand Standardsammlungsdienst des Microsoft(R)-Diagnose-Hubs
+diagsvc stopped/demand Diagnostic Execution Service
+DiagTrack running/auto Benutzererfahrung und Telemetrie im verbundenen Modus
+DmEnrollmentSvc stopped/demand Registrierungsdienst für die Geräteverwaltung
+dmwappushservice stopped/demand dmwappushsvc
+Dnscache running/auto DNS-Client
+DoSvc running/auto Übermittlungsoptimierung
+dot3svc stopped/demand Automatische Konfiguration (verkabelt)
+DPS running/auto Diagnoserichtliniendienst
+DsmSvc stopped/demand Geräteinstallations-Manager
+DsSvc stopped/demand Datenfreigabedienst
+DusmSvc running/auto Datennutzung
+Eaphost stopped/demand Extensible Authentication-Protokoll
+EFS stopped/demand Verschlüsselndes Dateisystem (EFS)
+embeddedmode stopped/demand Eingebetteter Modus
+EntAppSvc stopped/demand Verwaltungsdienst für Unternehmens-Apps
+EventLog running/auto Windows-Ereignisprotokoll
+EventSystem running/auto COM+-Ereignissystem
+Fax stopped/demand Fax
+fdPHost running/demand Funktionssuchanbieter-Host
+FDResPub running/demand Funktionssuche-Ressourcenveröffentlichung
+fhsvc stopped/demand Dateiversionsverlauf-Dienst
+FontCache running/auto Windows-Dienst für Schriftartencache
+FrameServer stopped/demand Windows-Kamera-FrameServer
+gpsvc running/auto Gruppenrichtlinienclient
+GraphicsPerfSvc stopped/demand GraphicsPerfSvc
+hidserv stopped/demand Eingabegerätedienst
+HomeGroupListener stopped/demand Heimnetzgruppen-Listener
+HomeGroupProvider running/demand Heimnetzgruppen-Anbieter
+HvHost stopped/demand HV-Hostdienst
+icssvc stopped/demand Windows-Dienst für mobile Hotspots
+IKEEXT running/auto IKE- und AuthIP IPsec-Schlüsselerstellungsmodule
+InstallService running/demand Windows Store-Installationsdienst
+iphlpsvc running/auto IP-Hilfsdienst
+IpxlatCfgSvc stopped/demand Konfigurationsdienst für die IP-Übersetzung
+irmon stopped/demand Infrarotüberwachungsdienst
+KeyIso running/demand CNG-Schlüsselisolation
+KtmRm stopped/demand KtmRm für Distributed Transaction Coordinator
+LanmanServer running/auto Server
+LanmanWorkstation running/auto Arbeitsstationsdienst
+lfsvc running/demand Geolocation-Dienst
+LicenseManager running/demand Windows-Lizenz-Manager-Dienst
+lltdsvc stopped/demand Verbindungsschicht-Topologieerkennungs-Zuordnungsprogramm
+lmhosts running/demand TCP/IP-NetBIOS-Hilfsdienst
+LSM running/auto Lokaler Sitzungs-Manager
+LxssManager stopped/demand LxssManager
+MapsBroker stopped/auto Manager für heruntergeladene Karten
+MozillaMaintenance stopped/demand Mozilla Maintenance Service
+MpsSvc running/auto Windows Defender Firewall
+MSDTC stopped/demand Distributed Transaction Coordinator
+MSiSCSI stopped/demand Microsoft iSCSI-Initiator-Dienst
+msiserver running/demand Windows Installer
+NaturalAuthentication stopped/demand Natürliche Authentifizierung
+NcaSvc stopped/demand Netzwerkkonnektivitäts-Assistent
+NcbService running/demand Netzwerkverbindungsbroker
+NcdAutoSetup stopped/demand Autom. Setup von Geräten, die mit dem Netzwerk verbunden sind
+Netlogon stopped/demand Anmeldedienst
+Netman stopped/demand Netzwerkverbindungen
+netprofm running/demand Netzwerklistendienst
+NetSetupSvc stopped/demand Netzwerkeinrichtungsdienst
+NetTcpPortSharing stopped/disabled Net.Tcp-Portfreigabedienst
+NgcCtnrSvc stopped/demand Microsoft Passport-Container
+NgcSvc stopped/demand Microsoft Passport
+NlaSvc running/auto NLA (Network Location Awareness)
+nsi running/auto Netzwerkspeicher-Schnittstellendienst
+OpenVPNService stopped/demand OpenVPN Service
+OpenVPNServiceInteractive running/auto OpenVPN Interactive Service
+p2pimsvc stopped/demand Peernetzwerkidentitäts-Manager
+p2psvc stopped/demand Peernetzwerk-Gruppenzuordnung
+PcaSvc running/demand Programmkompatibilitäts-Assistent-Dienst
+PeerDistSvc stopped/demand BranchCache
+PerfHost stopped/demand Leistungsindikator-DLL-Host
+PhoneSvc stopped/demand Telefondienst
+pla stopped/demand Leistungsprotokolle und -warnungen
+PlugPlay running/demand Plug & Play
+PNRPAutoReg stopped/demand PNRP-Computernamenveröffentlichungs-Dienst
+PNRPsvc stopped/demand Peer Name Resolution-Protokoll
+PolicyAgent running/demand IPsec-Richtlinien-Agent
+Power running/auto Stromversorgung
+PrintNotify stopped/demand Printer Extensions and Notifications
+ProfSvc running/auto Benutzerprofildienst
+PushToInstall stopped/demand Windows PushToInstall-Dienst
+QWAVE stopped/demand Verbessertes Windows-Audio/Video-Streaming
+RasAuto stopped/demand Verwaltung für automatische RAS-Verbindung
+RasMan stopped/demand RAS-Verbindungsverwaltung
+RemoteAccess stopped/disabled Routing und RAS
+RemoteRegistry stopped/disabled Remoteregistrierung
+RetailDemo stopped/demand Dienst für Einzelhandelsdemos
+RmSvc stopped/demand Funkverwaltungsdienst
+RpcEptMapper running/auto RPC-Endpunktzuordnung
+RpcLocator stopped/demand RPC-Locator
+RpcSs running/auto Remoteprozeduraufruf (RPC)
+SamSs running/auto Sicherheitskonto-Manager
+SCardSvr stopped/disabled Smartcard
+ScDeviceEnum stopped/demand Smartcard-Geräteaufzählungsdienst
+Schedule running/auto Aufgabenplanung
+SCPolicySvc stopped/demand Richtlinie zum Entfernen der Scmartcard
+SDRSVC stopped/demand Windows-Sicherung
+seclogon stopped/demand Sekundäre Anmeldung
+SecurityHealthService running/auto Windows Defender Security Center Service
+SEMgrSvc running/demand Zahlungs- und NFC/SE-Manager
+SENS running/auto Benachrichtigungsdienst für Systemereignisse
+Sense stopped/demand Windows Defender Advanced Threat Protection-Dienst
+SensorDataService stopped/demand Sensordatendienst
+SensorService stopped/demand Sensordienst
+SensrSvc stopped/demand Sensorüberwachungsdienst
+SessionEnv running/demand Konfiguration für Remotedesktops
+SharedAccess stopped/demand Gemeinsame Nutzung der Internetverbindung
+SharedRealitySvc stopped/demand Dienst für räumliche Daten
+ShellHWDetection running/auto Shellhardwareerkennung
+shpamsvc stopped/disabled Shared PC Account Manager
+smphost stopped/demand Microsoft-SMP für Speicherplätze
+SmsRouter stopped/demand Microsoft Windows SMS-Routerdienst.
+SNMPTRAP stopped/demand SNMP-Trap
+spectrum stopped/demand Windows Perception Service
+Spooler running/auto Druckwarteschlange
+sppsvc stopped/auto Software Protection
+SSDPSRV running/demand SSDP-Suche
+SstpSvc stopped/demand SSTP-Dienst
+StateRepository running/demand StateRepository-Dienst
+stisvc stopped/demand Windows-Bilderfassung (WIA)
+StorSvc running/demand Speicherdienst
+svsvc stopped/demand Echtzeit-Datenträgerprüfung
+swprv stopped/demand Microsoft-Softwareschattenkopie-Anbieter
+SysMain running/auto Superfetch
+SystemEventsBroker running/auto Systemereignissebroker
+TabletInputService running/demand Dienst für Bildschirmtastatur und Schreibbereich
+TapiSrv stopped/demand Telefonie
+TermService running/demand Remotedesktopdienste
+Themes running/auto Designs
+TieringEngineService stopped/demand Storage Tiers Management
+tiledatamodelsvc running/demand Kacheldaten-Modellserver
+TimeBrokerSvc running/demand Zeitbroker
+TokenBroker running/demand Web Account Manager
+TrkWks running/auto Überwachung verteilter Verknüpfungen (Client)
+TrustedInstaller stopped/demand Windows Modules Installer
+tzautoupdate stopped/disabled Automatische Zeitzonenaktualisierung
+UevAgentService stopped/disabled User Experience Virtualization-Dienst
+UI0Detect stopped/demand Erkennung interaktiver Dienste
+UmRdpService running/demand Anschlussumleitung für Remotedesktopdienst im Benutzermodus
+upnphost stopped/demand UPnP-Gerätehost
+UserManager running/auto Benutzer-Manager
+UsoSvc running/demand Update Orchestrator Service
+VaultSvc running/demand Anmeldeinformationsverwaltung
+VBoxService running/auto VirtualBox Guest Additions Service
+vds stopped/demand Virtueller Datenträger
+vmicguestinterface stopped/demand Hyper-V-Gastdienstschnittstelle
+vmicheartbeat stopped/demand Hyper-V-Taktdienst
+vmickvpexchange stopped/demand Hyper-V-Datenaustauschdienst
+vmicrdv stopped/demand Hyper-V-Remotedesktopvirtualisierungsdienst
+vmicshutdown stopped/demand Hyper-V-Dienst zum Herunterfahren des Gasts
+vmictimesync stopped/demand Hyper-V-Dienst für Zeitsynchronisierung
+vmicvmsession stopped/demand Hyper-V PowerShell Direct-Dienst
+vmicvss stopped/demand Hyper-V-Volumeschattenkopie-Anforderer
+VSS stopped/demand Volumeschattenkopie
+W32Time stopped/demand Windows-Zeitgeber
+WalletService stopped/demand WalletService
+WarpJITSvc running/demand WarpJITSvc
+wbengine stopped/demand Blockebenen-Sicherungsmodul
+WbioSrvc stopped/demand Windows-Biometriedienst
+Wcmsvc running/auto Windows-Verbindungs-Manager
+wcncsvc stopped/demand Windows-Sofortverbindung - Konfigurationsregistrierungsstelle
+WdiServiceHost running/demand Diagnosediensthost
+WdiSystemHost running/demand Diagnosesystemhost
+WdNisSvc running/demand Windows Defender Antivirus-Netzwerkinspektionsdienst
+WebClient stopped/demand WebClient
+Wecsvc stopped/demand Windows-Ereignissammlung
+WEPHOSTSVC stopped/demand Hostdienst für Windows Encryption Provider
+wercplsupport stopped/demand Unterstützung in der Systemsteuerung unter Lösungen für Probleme
+WerSvc stopped/demand Windows-Fehlerberichterstattungsdienst
+WFDSConMgrSvc stopped/demand Verbindungs-Manager-Dienst von Wi-Fi Direct Services
+WiaRpc stopped/demand Ereignisse zum Abrufen von Standbildern
+WinDefend running/auto Windows Defender Antivirus Service
+WinHttpAutoProxySvc running/demand WinHTTP-Web Proxy Auto-Discovery-Dienst
+Winmgmt running/auto Windows-Verwaltungsinstrumentation
+WinRM stopped/demand Windows-Remoteverwaltung (WS-Verwaltung)
+wisvc running/demand Windows-Insider-Dienst
+WlanSvc stopped/demand Automatische WLAN-Konfiguration
+wlidsvc running/demand Anmelde-Assistent für Microsoft-Konten
+wlpasvc stopped/demand Dienst "Assistent für lokale Profile"
+wmiApSrv running/demand WMI-Leistungsadapter
+WMPNetworkSvc stopped/demand Windows Media Player-Netzwerkfreigabedienst
+workfolderssvc stopped/demand Arbeitsordner
+WPDBusEnum stopped/demand Enumeratordienst für tragbare Geräte
+WpnService running/auto Windows-Pushbenachrichtigungssystemdienst
+wscsvc running/auto Sicherheitscenter
+WSearch running/auto Windows Search
+wuauserv running/demand Windows Update
+WwanSvc stopped/demand WWAN - automatische Konfiguration
+xbgm stopped/demand Xbox Game Monitoring
+XblAuthManager stopped/demand Xbox Live Authentifizierungs-Manager
+XblGameSave stopped/demand Xbox Live-Spiele speichern
+XboxGipSvc stopped/demand Xbox Accessory Management Service
+XboxNetApiSvc stopped/demand Xbox Live-Netzwerkservice
+CDPUserSvc_1880a running/auto CDPUserSvc_1880a
+DevicesFlowUserSvc_1880a stopped/demand DevicesFlowUserSvc_1880a
+MessagingService_1880a stopped/demand MessagingService_1880a
+OneSyncSvc_1880a running/auto OneSyncSvc_1880a
+PimIndexMaintenanceSvc_1880a stopped/demand PimIndexMaintenanceSvc_1880a
+PrintWorkflowUserSvc_1880a stopped/demand PrintWorkflowUserSvc_1880a
+UnistoreSvc_1880a stopped/demand UnistoreSvc_1880a
+UserDataSvc_1880a stopped/demand UserDataSvc_1880a
+WpnUserService_1880a running/auto WpnUserService_1880a
+Check_MK_Agent running/auto Check_MK_Agent
