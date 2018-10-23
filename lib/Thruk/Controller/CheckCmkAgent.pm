@@ -25,10 +25,10 @@ use YAML;
 use IO::File;
 use IO::Dir;
 use IO::Socket::INET;
+use Monitoring::CheckMkAgent;
 
 my $AGENT_DIR = '/var/lib/check_cmkagent';
 my $NAGIOS_DIR = 'etc/naemon/conf.d/';
-my $VALID_HOST_REGEX = qr/^[a-zA-Z0-9._-]+$/;
 
 sub add_routes {
     my($self, $app, $routes) = @_;
@@ -47,95 +47,15 @@ sub add_routes {
     return;
 }
 
-sub collect_hosts {
-    my @hosts = @_;
-    my %hosts;
-
-    unless (@hosts)  {
-        my $dh = IO::Dir->new($AGENT_DIR);
-        return unless defined $dh;
-
-        while (my $entry = $dh->read) {
-            push(@hosts, $entry);
-        }
-    }
-
-    for my $entry (@hosts) {
-        my $path = "$AGENT_DIR/$entry";
-        next unless -f $path;
-
-        $hosts{$entry} = {
-            name => $entry,
-            services => { collect_host_services($path) },
-        };
-    }
-
-    return %hosts;
-}
-
-sub parse_cmkagent {
-    my $path = shift;
-    my @sections;
-
-    my $fh = IO::File->new($path, 'r');
-    while (my $line = $fh->getline) {
-        if ($line =~ /^\s*<<<([^>:]+)(?::[^>]+)?/) {
-            push(@sections, { section => $1, content => [] });
-        }
-        elsif ($line =~ /^\s*[[]([^]]+)_(?:start|end)[]]$/) {
-            $sections[-1]->{specialization} = $1;
-        }
-        else {
-            push(@{$sections[-1]->{content}}, $line);
-        }
-    }
-
-    return @sections;
-}
-
-sub collect_host_services {
-    my $path = shift;
-    my %services;
-
-    my @sections = parse_cmkagent($path);
-    for my $section (@sections) {
-        my %service = (
-            %{$section},
-            id => join('_', $section->{section}, ($section->{specialization} // '')),
-        );
-        my @services = ( \%service );
-
-        if ($section->{section} eq 'df') {
-            my $i = 0;
-            @services = ();
-            for my $line (@{$section->{content}}) {
-                push(@services, {
-                    %service,
-                    content => $line,
-                    entity => [split(/\s/, $line)]->[-1],
-                    id => $service{id} . '_' . $i,
-                });
-                $i++;
-            }
-        }
-
-        for (@services) {
-            $services{$_->{id}} = $_;
-        }
-    }
-
-    return %services;
-}
-
 sub index {
     my $c = shift;
 
-    my $host = $c->req->parameters->{host};
-    $host = undef unless $host =~ /$VALID_HOST_REGEX/;
+    my @hosts = ($c->req->parameters->{host}) // ();
+    unless (@hosts) {
+        @hosts = Monitoring::CheckMkAgent::list;
+    }
 
-    my @filter;
-    push(@filter, $host) if defined $host;
-    $c->stash->{hosts} = { collect_hosts(@filter) };
+    $c->stash->{hosts} = [ map({ Monitoring::CheckMkAgent->new(host => $_) } @hosts) ];
     $c->stash->{template} = 'check_cmkagent.tt';
 }
 
@@ -149,7 +69,7 @@ sub add {
     my $crit = $c->req->parameters->{crit};
 
     # Validate arguments
-    return unless $host =~ /$VALID_HOST_REGEX/;
+    #return unless $host =~ /$VALID_HOST_REGEX/;
     return unless $service =~ /^[a-zA-Z0-9_]+$/;
     return unless $warn =~ /^\d+$/;
     return unless $crit =~ /^\d+$/;
