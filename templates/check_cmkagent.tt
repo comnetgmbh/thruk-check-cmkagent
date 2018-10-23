@@ -60,8 +60,7 @@
         <th class="status col">Threshold critical (%)</th>
         <th class="status col">Generate</th>
     </tr>
-        [% FOR host_name IN hosts.keys().sort() %]
-            [% SET host = hosts.$host_name %]
+        [% FOR host IN hosts %]
             [% SET first_service = 1 %]
             [% SET even = 'statusEven' %]
             [% FOR service_id IN host.services.keys().sort() %]
