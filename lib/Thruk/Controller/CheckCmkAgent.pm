@@ -182,10 +182,10 @@ sub add {
     die("Can't open $service_cfg: $!\n") unless defined $service_fh;
     print($service_fh <<EOF
 define service {
-        use                     generic-service
-        host_name               $host
-        service_description     $service{description}
-        check_command           check_cmkagent_passive!$service{section}!$service{entity}!$warn!$crit
+	use                     generic-service
+	host_name               $host
+	service_description     $service{section}: $service{entity}
+	check_command           check_cmkagent_passive!$service{section}!$service{entity}!$warn!$crit
 }
 EOF
 );
